@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+	font-family: "Product Sans Reg";
+	src: url("../fonts/Product_Sans_Regular.ttf")
+}
+
+@font-face {
+	font-family: "Product Sans Bold";
+	src: url("../fonts/Product_Sans_Bold.ttf")
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background-color: #fff;
+	font-family: "Product Sans Reg"!important
+}
+
+html {
+	scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+	width: 7px
+}
+
+::-webkit-scrollbar-track {
+	background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+	background: #102536
+}
+
+.dashboard .head {
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	background-image: url(../assets/bg-2-dark.jpg);
+	background-position: center;
+	background-attachment: fixed
+}
+
+.head h1 {
+	text-align: center;
+	font-size: 120px;
+	color: white
+}
+
+#back-to-home {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 20px;
+	text-decoration: none;
+	color: white
+}
+
+#back-to-home:hover {
+	text-decoration: underline
+}
+
+.column {
+	margin-top: -100px;
+	float: left;
+	width: 22%;
+	padding: 0 10px
+}
+
+.column h3 {
+	font-size: 1.6rem;
+	font-family: Product Sans Reg
+}
+
+.column p {
+	font-size: 1.3rem;
+	padding: 7px;
+	font-family: Product Sans Reg
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -5px
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+.card {
+	border: 2px solid rgba(0, 0, 0, 0.137);
+	padding: 16px;
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	height: 110px;
+	color: #000
+}
+
+.botton-row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 -5px
+}
+
+.bottom-column {
+	margin-top: 80px;
+	float: left;
+	width: 48%;
+	padding: 0 10px
+}
+
+#map {
+	height: 400px;
+	width: 900px;
+	margin-left: 100px
+}
+
+.driver-card {
+	border: 2px solid rgba(0, 0, 0, 0.137);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px
+}
+
+.title {
+	font-size: 21px;
+	padding: 3px
+}
+
+button {
+	border: 0;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px
+}
+
+button:hover,
+a:hover {
+	opacity: .7
+}
