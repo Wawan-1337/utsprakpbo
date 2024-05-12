@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/favicon.png">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet">
+     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+ 
+    <link rel="stylesheet" href="../../css/dashboard.css">
+    <title>Gamify | Dashboard</title>
+</head>
+<body>
+
+
+    <section class="dashboard">
+        <div class="head">
+            <h1>Dashboard</h1>
+        </div>
+        <a href="../../index.html" id="back-to-home"><ion-icon name="return-up-back-outline"></ion-icon> Back to Home</a>
+
+        <section>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <h3>Current Ordered Product</h3>
+                  <p>Playstation 5</p>
+                  <p>Rs 39,900</p>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <h3>Recently Delivered Product</h3>
+                  <p>Firefly Silicone Cover</p>
+                  <p>Rs 600</p>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <h3>Total Ordered Products</h3>
+                  <p>7</p>
+                  <p><b>Net:</b> Rs 79,980</p>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <h3>Offers Availed</h3>
+                  <p>3</p>
+                  <p><b>Net Savings:</b> Rs 12,000</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <div class="bottom-row">
+
+            <div class="bottom-column">
+              <h2 style="text-align: center; font-size: 30px; margin-left: 200px; margin-top: -30px; padding-bottom: 20px;">Your Product's Location</h2>
+              <div id="map"></div>
+            </div>
+
+            <div class="bottom-column">
+              <h2 style="text-align: center; font-size: 30px; margin-right: 10px; margin-top: -30px; padding-bottom: 20px;">Driver Details</h2> 
+              <div class="driver-card">
+                <img src="../../assets/dashboard/driver.jpg" alt="John" style="width:100%; height: 230px; border-radius: 10px 10px 0 0;">
+                <h1>John Doe</h1>
+                <br>
+                <p class="title">Driver</p>
+                <p class="title"><b>Contact No.:</b> 9999999999</p>
+                <p class="title"><b>Experience:</b> 5yrs</p>
+                <br>
+              </div> 
+            </div>
+
+          </div>
+    </section>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic2FoaWwwNiIsImEiOiJja3NlYXAzcGUweXZzMm9vZDF6a213a3YwIn0.2TqRpF9Ot8N3TcY5vKY0ag';
+  const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [77.1888, 28.6550],
+      zoom: 9 
+  });
+
+  map.addControl(
+      new mapboxgl.GeolocateControl({
+          positionOptions: {
+              enableHighAccuracy: true
+          },
+          trackUserLocation: true,
+          showUserHeading: true
+      })
+  );
+  const marker1 = new mapboxgl.Marker()
+  .setLngLat([77.1888, 28.7095])
+  .addTo(map);
+</script>
+
+</body>
+</html>

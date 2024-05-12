@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gamify | Your Gaming Store</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="hamburger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+            <div class="logo">
+                <h2 class="gamify-logo">Gamify</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="pages/products/products.html">Products</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="pages/stores/stores.html">Our Stores</a></li>
+                <li><a href="pages/login/login.html">Your Orders</a></li>
+                <li id="cart-button"><a href="pages/cart/cart.html"><ion-icon name="cart-outline" id="icon"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner-main">
+        <h1>Gamify</h1>
+        <h2>Yours All in One online Gaming store</h2>
+        
+        <div class="btn-main">
+            <button onClick="location.href='#products'" class="char-btn">Products<ion-icon name="arrow-forward-outline" id="right-arrow"></ion-icon></button>
+        </div>
+    </section>
+    <div class="about" id="about">
+        <h1>About Gamify</h1>
+        <p><b>Gamify</b> is a virtual supermarket for gaming. If you like shopping the traditional way, our stores offer you the same experience. Products offered online as well as in our stores, include, consoles like PS4, PS3, Xbox One, Nintendo Switch and many more. Gamify also offer the softwares for your consoles and accessories to enhance your gaming. You can also order Playstation Digital Cards & get voucher code immediately delivered on your e-mail.</p>
+    </div>
+    <div class="products" id="products">
+        <h1>Products</h1>
+        <p>We provide several gaming consoles like PS4, PS3, Xbox One, Nintendo Switch etc. We also offer the softwares for your consoles and accessories to enhance your gaming.</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p2.jpg" alt=""></a>
+            <h3>PS4</h3>
+            <p class="price">Rs 39,990</p>
+        </div>
+
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p6.jpg" alt=""></a>
+            <h3>GTA V: Premium Edition</h3>
+            <p class="price">Rs 2,000</p>
+        </div>
+
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p1.jpg" alt=""></a>
+            <h3>PS5</h3>
+            <p class="price">Rs 59,990</p>
+        </div>
+
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p3.jpg" alt=""></a>
+            <h3>Xbox One</h3>
+            <p class="price">Rs 30,000</p>
+        </div>
+
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p4.jpg" alt=""></a>
+            <h3>Nintendo Switch</h3>
+            <p class="price">Rs 35,000</p>
+        </div>
+
+        <div class="card">
+            <a href="pages/products/products.html"><img src="assets/products/p5.jpg" alt=""></a>
+            <h3>Firefly Silicone Cover</h3>
+            <p class="price">Rs 600</p>
+        </div>
+    </div>
+    <div class="btn-main-products">
+        <button onClick="location.href='pages/products/products.html'" class="char-btn">More Products<ion-icon name="arrow-forward-outline" id="right-arrow"></ion-icon></button>
+    </div>
+    <div class="offers-wrapper" id="offers">
+        <div class="offers">
+            <div class="offers-content">
+                <h2>Special Offers for You!</h2>
+                <p>On buying products worth Rs 90,000, you get a 30% discount on your final bill.</p>
+                <p>All PS5 accessories free on buying PS5 through our online store.</p>
+                <p>25% off on all GTA games.</p>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+    <div class="rev" id="rev">
+        <h1>Reviews</h1>
+    </div>
+    <div class="slideshow-container">
+        <div class="slide">
+            <q>I am glad that a good interface, everything is made more than clear and the price does not bite, which in general is more than nice.</q>
+            <p class="author">~ John Doe</p>
+        </div>
+        
+        <div class="slide">
+            <q>One of the best websites I've ever bought from. Their support will literally meet any of your needs, and is always trying to do right by you.</q>
+            <p class="author">~ John Gupta</p>
+        </div>
+        
+        <div class="slide">
+            <q>Recently purchased PS5 from here. All very happy! Excellent service for the acquisition, I advise everyone!            </q>
+            <p class="author">~ John Sharma</p>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+<br><br><br><br><br><br><br><br><br>
+</div>
+    <footer>
+    @Gamify 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Made with 💖 by <a style="text-decoration: none; color: rgb(49, 80, 218);" href="https://github.com/imsahiljain">Purna Irawan</a>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
